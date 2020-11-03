@@ -42,6 +42,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -179,19 +181,26 @@ img {
 }
 
 .mail-icon {
-  /* display: flex; */
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+  content: "";
+  color: #000000;
   width: 16px;
   height: 12px;
+}
+
+.icon-envelope:hover {
+  fill: var(--accent-cl);
 }
 
 .site-nav-item {
   align-items: center;
 }
 
-.env-icon {
+.smart-icon {
   width: 10px;
   height: 16px;
+  fill: var(--accent-cl);
 }
 
 /* .icon-envelope::before {
@@ -439,7 +448,58 @@ img {
   background-color: var(--accent-cl);
 }
 
-/******************************* footer *******************************/
+/*========= Clients 
+========================*/
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.clients-list {
+  list-style: none;
+  display: flex;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.clients-list-logo {
+  box-sizing: border-box;
+  display: block;
+  content: "";
+  height: 90px;
+  width: 170px;
+  background-size: contain;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.clients-list-item {
+  margin-right: 30px;
+}
+
+.clients-list-item:last-child {
+  margin-right: 0;
+}
+
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************** footer 
+*******************************/
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
