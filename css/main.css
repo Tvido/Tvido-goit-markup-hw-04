@@ -160,6 +160,7 @@ img {
 .contacts {
   display: flex;
   margin-left: auto;
+  list-style: none;
 }
 
 .contacts .site-nav-item + .site-nav-item {
@@ -180,37 +181,14 @@ img {
   color: var(--accent-cl);
 }
 
-.mail-icon {
-  align-items: center;
-  justify-content: center;
-  content: "";
-  color: #000000;
-  width: 16px;
-  height: 12px;
-}
-
-.icon-envelope:hover {
-  fill: var(--accent-cl);
-}
-
-.site-nav-item {
-  align-items: center;
-}
-
-.smart-icon {
-  width: 10px;
-  height: 16px;
-  fill: var(--accent-cl);
-}
-
-/* .icon-envelope::before {
+.icon-nav-envelope {
   display: inline-block;
   content: "";
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url(../images/nav/envelope.svg);
-} */
+  align-items: center;
+}
 
 /*======================== Hero ========================*/
 .hero {
@@ -468,6 +446,7 @@ img {
   line-height: 1.167;
   text-align: center;
   color: var(--secondary-text-color);
+  margin-bottom: 50px;
 }
 
 .clients-list-logo {
