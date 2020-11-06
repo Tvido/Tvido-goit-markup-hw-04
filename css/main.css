@@ -58,12 +58,12 @@ img {
 }
 
 .container {
-  /* outline: 3px solid red; */
+  outline: 3px solid red;
   width: 1200px;
-  /* align-items: Center;
+  align-items: Center;
   margin-top: 0;
   margin-left: auto;
-  margin-right: auto; */
+  margin-right: auto;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -584,6 +584,11 @@ img {
 /*************** Footer social
 ***************/
 
+.footer-social {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-social-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -593,6 +598,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+
+.footer-social-title {
+  margin-bottom: 20px;
 }
 
 .social-icons {
