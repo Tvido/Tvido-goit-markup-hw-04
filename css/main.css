@@ -58,7 +58,7 @@ img {
 }
 
 .container {
-  outline: 3px solid red;
+  /* outline: 3px solid red; */
   width: 1200px;
   margin-top: 0;
   margin-left: auto;
@@ -105,7 +105,8 @@ img {
   background-color: var(--dark-bg-cl);
 }
 
-/*======================== Навігація ========================*/
+/*============ Навігація 
+========================*/
 .main-nav {
   display: flex;
   align-items: center;
@@ -155,6 +156,12 @@ img {
   color: var(--accent-cl);
 }
 
+.contacts-item-svg {
+  width: 16px;
+  height: 12px;
+  fill: var(--primary-text-color);
+}
+
 /*============ контакти хедер ============*/
 .contacts {
   display: flex;
@@ -180,11 +187,19 @@ img {
   color: var(--accent-cl);
 }
 
-.icon-nav-envelope {
+.contacts-item:hover .contacts-item-svg,
+.contacts-item:focus .contacts-item-svg {
+  fill: var(--accent-cl);
+}
+.contacts-item:hover,
+.contacts-item:focus {
+  border-color: var(--accent-cl);
+}
+
+.contacts-item-svg {
   display: inline-block;
   content: "";
-  width: 16px;
-  height: 12px;
+  height: 16px;
   margin-right: 10px;
   align-items: center;
 }
@@ -604,7 +619,7 @@ img {
 
 .footer-social-title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -613,9 +628,9 @@ img {
   color: var(--primary-white-color);
 }
 
-.footer-social-title {
+/* .footer-social-title {
   margin-bottom: 20px;
-}
+} */
 
 /* .social-icons {
   display: inline-flex;

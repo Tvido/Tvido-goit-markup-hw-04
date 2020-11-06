@@ -137,10 +137,17 @@ img {
   color: var(--accent-cl);
 }
 
+.contacts-item-svg {
+  width: 16px;
+  height: 12px;
+  fill: var(--primary-text-color);
+}
+
 /*============ контакти хедер ============*/
 .contacts {
   display: flex;
   margin-left: auto;
+  list-style: none;
 }
 
 .contacts .site-nav-item + .site-nav-item {
@@ -159,6 +166,23 @@ img {
 .contacts .contacts-item:hover,
 .contacts .contacts-item:focus {
   color: var(--accent-cl);
+}
+
+.contacts-item:hover .contacts-item-svg,
+.contacts-item:focus .contacts-item-svg {
+  fill: var(--accent-cl);
+}
+.contacts-item:hover,
+.contacts-item:focus {
+  border-color: var(--accent-cl);
+}
+
+.contacts-item-svg {
+  display: inline-block;
+  content: "";
+  height: 16px;
+  margin-right: 10px;
+  align-items: center;
 }
 
 /****************************** Товари ******************************/
@@ -239,7 +263,12 @@ img {
   color: var(--primary-text-color);
 }
 
-/******************************* footer *******************************/
+/************ footer 
+*************************/
+.wide {
+  display: flex;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -289,4 +318,77 @@ img {
 .footer-address :hover,
 .footer-address :focus {
   color: var(--accent-cl);
+}
+
+.footer {
+  margin-right: 70px;
+}
+
+/*************** Footer social
+***************/
+
+.footer-social {
+  padding-top: 72px;
+  padding-bottom: 60px;
+}
+
+.footer-social-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+/* .footer-social-title {
+  margin-bottom: 20px;
+} */
+
+/* .social-icons {
+  display: inline-flex;
+} */
+
+/* .footer-social-item:not(:last-child) {
+  margin-right: 40px;
+} */
+
+/* .footer-social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--black);
+} */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-text-color);
+  border-radius: 50%;
+}
+
+.footer-social-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-white-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-cl);
 }
