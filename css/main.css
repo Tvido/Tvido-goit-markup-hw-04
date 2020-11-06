@@ -60,7 +60,6 @@ img {
 .container {
   outline: 3px solid red;
   width: 1200px;
-  align-items: Center;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -530,6 +529,11 @@ img {
 
 /****************** footer 
 *******************************/
+
+.wide {
+  display: flex;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -579,6 +583,10 @@ img {
 .footer-address :hover,
 .footer-address :focus {
   color: var(--accent-cl);
+}
+
+.footer {
+  margin-right: 70px;
 }
 
 /*************** Footer social
