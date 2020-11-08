@@ -540,7 +540,7 @@ img {
 }
 
 .clients-icons-svg {
-  width: 44px;
+  /* width: 44px; */
   height: 44px;
   fill: var(--primary-text-color);
 }
